@@ -18,6 +18,32 @@ from google.colab import drive, output
 from IPython.display import HTML, Javascript
 
 
+# Information in text files
+
+def get_all_indices_mode(path, mode):
+    """
+    """
+    indices = []
+    with open(path + f"{mode}.txt", 'r') as filehandle:
+        for line in filehandle:
+            idx = line.rstrip()
+            indices.append(idx)
+    return np.array(indices)
+
+def get_all_indices_category(path, category, mode):
+    """
+    mode : either "train", "trainval" or "val"
+    """
+    filenames = []
+    values = []
+    with open(path + f"{category}_{mode}.txt", 'r') as filehandle:
+        for line in filehandle:
+            idx, val = line.rstrip().split(' ', 1)
+            filenames.append(idx)
+            values.append(int(val))
+    return np.array(filenames), np.array(values)
+
+
 # Categories selection
 CATEGORIES = []
 
