@@ -6,6 +6,7 @@ import torchvision
 # image processing
 import cv2
 import numpy as np
+from PIL import Image
 # to read/parse xml files
 from collections import OrderedDict
 import json
