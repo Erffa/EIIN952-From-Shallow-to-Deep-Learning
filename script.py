@@ -24,6 +24,8 @@ import tensorflow as tf
 from tensorflow.keras.applications import VGG16
 from tensorflow.keras.layers import Activation, Dense, Flatten
 from tensorflow.keras.models import Sequential
+# dataframe
+import pandas as pd
 
 # Information in text files
 
