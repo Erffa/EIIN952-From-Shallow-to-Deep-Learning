@@ -20,9 +20,9 @@ from IPython.display import HTML, Javascript
 # neural network kinda stuff
 from sklearn.metrics import accuracy_score
 from sklearn.model_selection import train_test_split
-from keras.applications import VGG16
-from keras.layers import Dense
-from keras.models import Sequential
+from tensorflow.keras.applications import VGG16
+from tensorflow.keras.layers import Activation, Dense, Flatten
+from tensorflow.keras.models import Sequential
 
 # Information in text files
 
