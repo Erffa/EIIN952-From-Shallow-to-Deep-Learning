@@ -26,6 +26,7 @@ from tensorflow.keras.layers import Activation, Dense, Flatten
 from tensorflow.keras.models import Sequential
 # dataframe
 import pandas as pd
+from keras.preprocessing.image import ImageDataGenerator
 
 # Information in text files
 
